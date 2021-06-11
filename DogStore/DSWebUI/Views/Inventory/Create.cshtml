@@ -1,0 +1,49 @@
+﻿@model DSWebUI.Models.InventoryVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>InventoryVM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DogString" class="control-label"></label>
+                <select asp-for="DogString" class="form-control">
+                    @{
+                        foreach (var item in Model.DogStringList)
+                        {
+                            <option title="@item" value="@item">@item</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="DogString" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="StoreLocationId" value=@Model.StoreLocationId />
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink( "Back to Items", "Index", "Inventory", new { id = Model.StoreLocationId })
+</div>
+<div>
+    @Html.ActionLink("Add Dog to The Database", "Create", "Dog", new{})
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
