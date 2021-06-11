@@ -30,10 +30,6 @@ Here goes your awesome project description!
 * Add New Dogs to the General Database
 * View Store Order History Sorted Ascending or Descending by Date or Cost
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
 ## Getting Started
 
 View website: http://fannerdogs.azurewebsites.net/
@@ -42,8 +38,8 @@ Docker: docker pull afanner/dsdocker:latest
         docker run -p 5000:80 -t afanner/dsdocker:latest
 
 For using this repo: 
-Install .NET 5 SDK: https://dotnet.microsoft.com/download
-git clone https://github.com/afanner/Fanner-Furry-Friends.git in a new directory
+* Install .NET 5 SDK: https://dotnet.microsoft.com/download
+* git clone https://github.com/afanner/Fanner-Furry-Friends.git in a new directory
 
 
 Windows:
@@ -53,21 +49,21 @@ Windows:
 ## Usage
 
 For Buying:
-* Click on Order a Dog
-* Choose a store to Order From
+* Click on "Order a Dog" from the navigation bar
+* Choose a store to order from
 * Choose your phone number from the drop down or add a new customer
-* Click add Item to Order and add dogs you wish to purchase
-* Click complete order when done
+* Click add "Item to Order" and add dogs you wish to purchase
+* Click "Complete Order" when done
 * View your order history by going to DogBuyer Menu> Selecting yourself> Selecting how to sort history
 ##
 For Managing: 
-* Click on Dog Manager Menu
-* Choose yourself or clicking on link to create new manager
-* Click on stores
+* Click on "Dog Manager Menu"
+* Choose yourself or click on link to create a new manager
+* Click on "Stores"
 * Click on "Order History" to view orders at your store, "Items" to add more stock, "Add a New Store" to add a new store and Delete to delete
 * Items: "Add Dogs in Database to The Inventory" will show you dogs you can add to the database, click "Add Dog to The Database" to add a new dog
 
 ## License
 
-This project uses the following license: [<MIT>](<https://mit-license.org/>).
+This project uses the following license: MIT <https://mit-license.org/>.
 
