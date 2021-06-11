@@ -59,6 +59,7 @@ For Buying:
 * Click add Item to Order and add dogs you wish to purchase
 * Click complete order when done
 * View your order history by going to DogBuyer Menu> Selecting yourself> Selecting how to sort history
+##
 For Managing: 
 * Click on Dog Manager Menu
 * Choose yourself or clicking on link to create new manager
