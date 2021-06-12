@@ -37,14 +37,6 @@ View website: http://fannerdogs.azurewebsites.net/
 Docker: docker pull afanner/dsdocker:latest
         docker run -p 5000:80 -t afanner/dsdocker:latest
 
-For using this repo: 
-* Install .NET 5 SDK: https://dotnet.microsoft.com/download
-* git clone https://github.com/afanner/Fanner-Furry-Friends.git in a new directory
-
-
-Windows:
-* Install Visual Studio: https://visualstudio.microsoft.com/downloads/
-* Run the DogStore.sln in Visual Studio, right click "View in Browser" on DSWebUI project
 
 ## Usage
 
